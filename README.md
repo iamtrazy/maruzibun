@@ -8,20 +8,6 @@ sudo usermod -aG docker $USER
 ```
 point the domain to server ip before starting the container.
 
-## Clone this repository to a vps
-
-```bash
-git clone https://github.com/iamtrazy/maruzibun.git
-```
-
-## Build the docker image using docker buildx
-
-
-```bash
-cd maruzibun
-docker buildx build -t maruzibun .
-```
-
 ## Run the docker image with host 443
 
 ```bash
@@ -30,7 +16,7 @@ docker run -d --restart unless-stopped \
 -e USERNAME='iamtrazy' \
 -e PASSWORD='password' \
 -p 443:443 \
---name maruzibun maruzibun:latest
+--name maruzibun iamtrazy/maruzibun:latest
 ```
 Additionally provide API_TOKEN and ADMIN_ID to integrate with telegram bot.  
 
