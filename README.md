@@ -5,7 +5,8 @@
 sudo apt-get update && sudo apt-get install -y docker.io
 sudo usermod -aG docker $USER
 ```
-point the domain to server ip before starting the container.
+point the domain to server ip before starting the container.  
+you might have to reboot the server or logout and log back again in order to use docker without sudo
 
 ## Run the docker image with host 443
 
