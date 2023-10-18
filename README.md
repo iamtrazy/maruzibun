@@ -30,16 +30,16 @@ docker run -d --restart unless-stopped \
 -e USERNAME='iamtrazy' \
 -e PASSWORD='password' \
 -p 443:443 \
---name maruziban maruzibun:latest
+--name maruzibun maruzibun:latest
 ```
 :warning: change your dashboard username and password after copying the command unless you want to have the above insecure credentials.
 ## Stop the container
 ```bash
-docker stop maruziban
+docker stop maruzibun
 ```
 ## Remove the container
 ```bash
-docker rm maruziban
+docker rm maruzibun
 ```
 :warning: removing or stopping the container or rebooting the host will delete all the created users from marzban dashboard , use docker compose and create a volume if you want to persist users and data after reboot.
 
