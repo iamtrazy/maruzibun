@@ -21,7 +21,7 @@
 		header Connection *Upgrade*
 		header Upgrade websocket
 	}
-	reverse_proxy @vws unix//dev/shm/vws.sock
+	reverse_proxy @vws 127.0.0.1:2012
 
 	@host {
 		host $DOMAIN
