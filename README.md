@@ -32,6 +32,8 @@ docker run -d --restart unless-stopped \
 -p 443:443 \
 --name maruzibun maruzibun:latest
 ```
+Additionally provide API_TOKEN and ADMIN_ID to integrate with telegram bot.  
+
 :warning: change your dashboard username and password after copying the command unless you want to have the above insecure credentials.
 ## Stop the container
 ```bash
