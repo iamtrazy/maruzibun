@@ -1,9 +1,8 @@
 # Instructions
 
-## Prerequisites - docker.io and docker-buildx
-
+## Prerequisites - docker.io
 ```bash
-sudo apt-get update && sudo apt-get install -y docker.io docker-buildx
+sudo apt-get update && sudo apt-get install -y docker.io
 sudo usermod -aG docker $USER
 ```
 point the domain to server ip before starting the container.
